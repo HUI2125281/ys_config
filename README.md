@@ -25,8 +25,9 @@ Connect To:STRING=xxx.abc.com:443  #原来提供v2ray服务的端口
 将生成的byst.req，发给大白，得到许可放在conf.ini的第一行
 
 ## 客户端
-支持多种客户端，Windows、Linux、openwrt、MacOS、Android ，多看手册第三章
 
+支持多种客户端，Windows、Linux、openwrt、MacOS、Android ，多看手册第三章
+同样需要修改conf.ini，关注如下几行。
 ```sh
 ...
 # Change Mode to Server on BYST Server deployment
@@ -35,5 +36,5 @@ Mode:STRING=Client
 [Tunnels\HTTP]
 Listen Addr:STRING=127.0.0.1:1088 #本地提供服务的端口
 #Connect To:STRING=107.148.250.167:443 / 149.129.108.251:995
-Connect To:STRING=xxx.abc.com:8080  #服务器端BYST提供服务的端口
+Connect To:STRING=xxx.abc.com:8080  #服务器端BYST 提供服务的端口
 ```
